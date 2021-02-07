@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleUI
 {
@@ -32,12 +29,17 @@ namespace ConsoleUI
             */
 
             // Create a list of Vehicle called vehicles
-
+            var vehicles = new List<Vehicle>();
             /*
              * Create 4 instances: 1 Car, 1 Motorcycle, and then 2 instances of type Vehicle (use explicit typing) but use constuctors from derived classes
              * - new it up as one of each derived class
              * Set the properties with object initializer syntax
              */
+            var chiron = new Car() { HasTrunk = true, Make = "Bugatti", Model = "Chiron", Year = 2020 };
+            var motorcycle = new Motorcycle() { Make = "Ducati", Model = "Scrambler", Year = 2021 };
+
+            Vehicle mansory = new Car() { Make = "Lamborghini", Model = "Mansory", Year = 2020 };
+            Vehicle venom = new Car() { HasTrunk = false, Make = "Hennessey", Model = "Venom F5", Year = 2020}; 
 
             /*
              * Add the 4 vehicles to the list
