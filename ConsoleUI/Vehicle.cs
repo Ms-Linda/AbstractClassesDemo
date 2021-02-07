@@ -17,9 +17,10 @@ namespace ConsoleUI
                                               //(void) not returning anything (except poss later CWL)
                                               //there are parens with semicolon-this is how it's done
                                               //for no implementation / empty parentheses and semicolon
-
-        public virtual void DriveVirtual() //create a base implementation fr imagination
-                                           //other classes inheriting from Vehicle can override this scope
+                                              //any class that inherits from this (Vehicle class) has to 
+                                              //provide the specific scope to contain abstract info, if desired
+        public virtual void DriveVirtual() //create a base implementation from imagination
+                                           //other classes inheriting from this Vehicle class can override this scope
         {
             Console.WriteLine($"This {GetType().Name} is virtually in drive.");
         }

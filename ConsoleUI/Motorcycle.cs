@@ -17,7 +17,7 @@ namespace ConsoleUI
             //***base.DriveVirtual();*** 
             //this message appeared bc inherited from Vehicle
             //gets overridden by deleting it; then we make our own with CWL
-            Console.WriteLine($"This {GetType().Name} has a smooth and quiet virtual ride.");
+            Console.WriteLine($"This {GetType().Name} is a {GetType().BaseType.Name} that is virtually a smooth, quiet ride.");
         }
 
     }
