@@ -52,7 +52,7 @@ namespace ConsoleUI
 
             foreach(var veh in vehicles)//for each item in collection (you provide item in [veh] name)
             {
-                Console.WriteLine($"Make: {veh.Make} Model: {veh.Model} Year: {veh.Year}");
+                Console.WriteLine($"Make: {veh.Make}, Model: {veh.Model}, Year: {veh.Year}");
                 veh.DriveAbstract(); Console.WriteLine($"");
             }
             // Call each of the drive methods for one car and one motorcycle
