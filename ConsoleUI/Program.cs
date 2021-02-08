@@ -39,13 +39,22 @@ namespace ConsoleUI
             var motorcycle = new Motorcycle() { Make = "Ducati", Model = "Scrambler", Year = 2021 };
 
             Vehicle mansory = new Car() { Make = "Lamborghini", Model = "Mansory", Year = 2020 };
-            Vehicle venom = new Car() { HasTrunk = false, Make = "Hennessey", Model = "Venom F5", Year = 2020}; 
+            Vehicle venom = new Car() { HasTrunk = false, Make = "Hennessey", Model = "Venom F5", Year = 2020};
 
             /*
              * Add the 4 vehicles to the list
              * Using a foreach loop iterate over each of the properties
              */
+            vehicles.Add(chiron);
+            vehicles.Add(motorcycle);
+            vehicles.Add(mansory);
+            vehicles.Add(venom);
 
+            foreach(var veh in vehicles)//for each item in collection (you provide item in [veh] name)
+            {
+                Console.WriteLine($"Make: {veh.Make} Model: {veh.Model} Year: {veh.Year}");
+                veh.DriveAbstract(); Console.WriteLine($"");
+            }
             // Call each of the drive methods for one car and one motorcycle
 
             #endregion            
